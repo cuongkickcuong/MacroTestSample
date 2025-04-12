@@ -4,7 +4,6 @@ import base.BaseTest;
 import cucumber.api.CucumberOptions;
 
 @CucumberOptions(plugin = { "pretty", "html:target/cucumber-reports/cucumber-pretty",
-		//"pretty", "html:target/cucumber-report.html",
         "json:target/cucumber-reports/CucumberTestReport.json",
         "rerun:target/cucumber-reports/rerunfeature.txt" },
         features = "src/test/resources/features",

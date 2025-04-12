@@ -6,12 +6,6 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.appium.java_client.MobileBy;
 import io.cucumber.datatable.DataTable;
-import org.openqa.selenium.By;
-import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.asserts.SoftAssert;
-import assertion.MySoftAssert;
 import base.BasePage;
 
 import java.util.List;
@@ -65,7 +59,7 @@ public class Steps {
     @When("User(s) stay(s) on this screen for {int} seconds")
     public void user_stays_on_this_screen_for_seconds(Integer seconds) throws InterruptedException {
         for (int i = 0; i < seconds; i++) {
-            Thread.sleep(1000); // wake up before session expired
+            Thread.sleep(1000);
         }
     }
 

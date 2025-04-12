@@ -1,0 +1,2347 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2025-04-12T16:14:49.257Z",
+        "before": [
+          {
+            "result": {
+              "duration": 613843,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.before(Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "TC2 - Verify that the user is able to add three consecutive action block successfully",
+        "description": "",
+        "id": "action-block;tc2---verify-that-the-user-is-able-to-add-three-consecutive-action-block-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 10731375414,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2086529740,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open application and skip to dashboard",
+            "match": {
+              "location": "Steps.openApplicationAndSkipToDashboard()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1972580045,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User taps on \"Action Blocks\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Action Blocks\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 105886752,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "On Action Block screen, tap on add new trigger icon",
+            "match": {
+              "location": "Steps.tapOnAddActionBlockIcon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1183401644,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User taps on \"Action block name\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Action block name\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1002064452,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enters the text \"Block name 1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Block name 1\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.userEnterTheText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1589523311,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User taps on \"Enter Description\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Enter Description\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1448265610,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters the text \"Description action block 1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Description action block 1\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.userEnterTheText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1171561943,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "On Action Block detail screen, tap on add new input variable icon",
+            "match": {
+              "location": "Steps.onActionBlockDetailScreenTapOnAddNewInputVariableIcon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1784668761,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters \"Test Case 1\" into field \"variable_new_variable_dialog_name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test Case 1\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"variable_new_variable_dialog_name\"",
+                  "offset": 37
+                }
+              ],
+              "location": "Steps.user_enters_into_field(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 912684634,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User taps on \"OK\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 636749868,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User click on",
+            "match": {
+              "location": "Steps.user_click_on(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Locator",
+                  "Type"
+                ]
+              },
+              {
+                "cells": [
+                  "inputCollapseExpandButton",
+                  "id"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1285896155,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I see the following",
+            "match": {
+              "location": "Steps.softAssertVerifyExistingText(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Verify"
+                ]
+              },
+              {
+                "cells": [
+                  "Test Case 1"
+                ]
+              },
+              {
+                "cells": [
+                  "Default: False"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 167786206,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User taps on \"Test Case 1\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test Case 1\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1203318187,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User taps on \"True\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"True\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 701466185,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User taps on \"OK\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 729751734,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I see the following",
+            "match": {
+              "location": "Steps.softAssertVerifyExistingText(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Verify"
+                ]
+              },
+              {
+                "cells": [
+                  "Test Case 1"
+                ]
+              },
+              {
+                "cells": [
+                  "Default: True"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 142766299,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User click on",
+            "match": {
+              "location": "Steps.user_click_on(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Locator",
+                  "Type"
+                ]
+              },
+              {
+                "cells": [
+                  "addActionButton",
+                  "id"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1264421945,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User taps on \"Logging\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Logging\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1436439097,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User taps on \"Clear Log\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Clear Log\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1328622532,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User taps on \"System Log\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"System Log\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90189066,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "User taps on \"OK\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1229638041,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I see the following",
+            "match": {
+              "location": "Steps.softAssertVerifyExistingText(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Verify"
+                ]
+              },
+              {
+                "cells": [
+                  "Clear Log"
+                ]
+              },
+              {
+                "cells": [
+                  "System Log"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 139990873,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "User click on",
+            "match": {
+              "location": "Steps.user_click_on(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Locator",
+                  "Type"
+                ]
+              },
+              {
+                "cells": [
+                  "addOutputVariableButton",
+                  "id"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1201188502,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "User enters the text \"Output Variable 1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Output Variable 1\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.userEnterTheText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 703901177,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "User taps on \"Boolean\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Boolean\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1498105681,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "User taps on \"String\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"String\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 102504643,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "User taps on \"OK\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 683837952,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "User click on",
+            "match": {
+              "location": "Steps.user_click_on(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Locator",
+                  "Type"
+                ]
+              },
+              {
+                "cells": [
+                  "outputCollapseExpandButton",
+                  "id"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1266804536,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I see the following",
+            "match": {
+              "location": "Steps.softAssertVerifyExistingText(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Verify"
+                ]
+              },
+              {
+                "cells": [
+                  "Output Variable 1"
+                ]
+              },
+              {
+                "cells": [
+                  "Default: \u003cempty\u003e"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 185332132,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "User taps on \"Output Variable 1\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Output Variable 1\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 118505235,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "I see the following",
+            "match": {
+              "location": "Steps.softAssertVerifyExistingText(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Verify"
+                ]
+              },
+              {
+                "cells": [
+                  "Output Variable 1"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2326476500,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "User enters \"This is a testing string\" into field \"enter_variable_dialog_value\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"This is a testing string\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"enter_variable_dialog_value\"",
+                  "offset": 50
+                }
+              ],
+              "location": "Steps.user_enters_into_field(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 928477251,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "User taps on \"OK\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 732502939,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I see the following",
+            "match": {
+              "location": "Steps.softAssertVerifyExistingText(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Verify"
+                ]
+              },
+              {
+                "cells": [
+                  "Output Variable 1"
+                ]
+              },
+              {
+                "cells": [
+                  "This is a testing string"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 134722315,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "User click on",
+            "match": {
+              "location": "Steps.user_click_on(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Locator",
+                  "Type"
+                ]
+              },
+              {
+                "cells": [
+                  "acceptButton",
+                  "id"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1189747820,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "I see the following",
+            "match": {
+              "location": "Steps.softAssertVerifyExistingText(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Verify"
+                ]
+              },
+              {
+                "cells": [
+                  "Block name 1"
+                ]
+              },
+              {
+                "cells": [
+                  "Description action block 1"
+                ]
+              },
+              {
+                "cells": [
+                  "Clear Log"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 106843,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "verify all",
+            "match": {
+              "location": "Steps.verify_all()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Action Block",
+    "description": "",
+    "id": "action-block",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ActionBlock.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2025-04-12T16:15:34.680Z",
+        "before": [
+          {
+            "result": {
+              "duration": 149794,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.before(Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "TC1 - Verify that the user is able to add three consecutive macros successfully",
+        "description": "",
+        "id": "macro-page;tc1---verify-that-the-user-is-able-to-add-three-consecutive-macros-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 10378164242,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2415486013,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open application and skip to dashboard",
+            "match": {
+              "location": "Steps.openApplicationAndSkipToDashboard()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 757558954,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User taps on \"Add Macro\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Add Macro\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1169823703,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "On Macro Page, tap on add new trigger icon",
+            "match": {
+              "location": "Steps.tapOnAddNewTriggerIcon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1231823488,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User taps on \"Application\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Application\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1194991377,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User taps on \"App Install/Remove/Update\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"App Install/Remove/Update\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1284684325,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User taps on \"Application Removed\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Application Removed\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 118108933,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User taps on \"OK\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1272313259,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User taps on \"Any Application\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Any Application\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 107578989,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User taps on \"OK\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1405188352,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I see the following",
+            "match": {
+              "location": "Steps.softAssertVerifyExistingText(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Verify"
+                ]
+              },
+              {
+                "cells": [
+                  "Application Removed"
+                ]
+              },
+              {
+                "cells": [
+                  "Any Application"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 100119811,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "On Macro Page, tap on add new action icon",
+            "match": {
+              "location": "Steps.onMacroPageTapOnAddNewActionIcon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1210508548,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User taps on \"Logging\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Logging\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1399389842,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User taps on \"Clear Log\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Clear Log\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1357010804,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User taps on \"System Log\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"System Log\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 107984090,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User taps on \"OK\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1043508078,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I see the following",
+            "match": {
+              "location": "Steps.softAssertVerifyExistingText(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Verify"
+                ]
+              },
+              {
+                "cells": [
+                  "Application Removed"
+                ]
+              },
+              {
+                "cells": [
+                  "Any Application"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1132354445,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "On Macro Page, tap on add new constraint icon",
+            "match": {
+              "location": "Steps.onMacroPageTapOnAddNewConstraintIcon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 235073483,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User taps on \"Device State\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Device State\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1668875174,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User taps on \"Airplane Mode\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Airplane Mode\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1292296274,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User taps on \"Airplane Mode Disabled\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Airplane Mode Disabled\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 111149782,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User taps on \"OK\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 336200139,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I see the following",
+            "match": {
+              "location": "Steps.softAssertVerifyExistingText(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Verify"
+                ]
+              },
+              {
+                "cells": [
+                  "Airplane Mode Disabled"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 795673746,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User taps on \"Local Variables\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Local Variables\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 899498231,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "On Macro Page, tap on add new variable icon",
+            "match": {
+              "location": "Steps.onMacroPageTapOnAddNewVariableIcon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 888634200,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User enters the text \"Test Case\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test Case\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.userEnterTheText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 666579745,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "User taps on \"Boolean\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Boolean\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2110857236,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "User taps on \"Integer\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Integer\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 103506009,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "User taps on \"OK\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 717634989,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I see the following",
+            "match": {
+              "location": "Steps.softAssertVerifyExistingText(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Verify"
+                ]
+              },
+              {
+                "cells": [
+                  "Test Case"
+                ]
+              },
+              {
+                "cells": [
+                  "0"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 146250379,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "User taps on \"Test Case\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test Case\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3151794947,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "User enters \"1\" into field \"enter_variable_dialog_value\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"enter_variable_dialog_value\"",
+                  "offset": 27
+                }
+              ],
+              "location": "Steps.user_enters_into_field(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 728656172,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "User taps on \"OK\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 755218970,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I see the following",
+            "match": {
+              "location": "Steps.softAssertVerifyExistingText(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Verify"
+                ]
+              },
+              {
+                "cells": [
+                  "Test Case"
+                ]
+              },
+              {
+                "cells": [
+                  "1"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 52285,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "verify all",
+            "match": {
+              "location": "Steps.verify_all()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Macro page",
+    "description": "",
+    "id": "macro-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Macro.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2025-04-12T16:16:16.978Z",
+        "before": [
+          {
+            "result": {
+              "duration": 192662,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.before(Scenario)"
+            }
+          }
+        ],
+        "line": 49,
+        "name": "TC4 - Verify that the user is able to create - play - pause - reset StopWatch",
+        "description": "",
+        "id": "stopwatch-screen;tc4---verify-that-the-user-is-able-to-create---play---pause---reset-stopwatch;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 10254960010,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2538791729,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open application and skip to dashboard",
+            "match": {
+              "location": "Steps.openApplicationAndSkipToDashboard()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 710782156,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User taps on \"Stopwatches\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Stopwatches\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1132177863,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User click on",
+            "match": {
+              "location": "Steps.user_click_on(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Locator",
+                  "Type"
+                ]
+              },
+              {
+                "cells": [
+                  "Add Category",
+                  "accessibilityid"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 941454325,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enters the text \"Test Case 1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test Case 1\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.userEnterTheText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 573452088,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User taps on \"OK\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1059976715,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I see the following",
+            "match": {
+              "location": "Steps.softAssertVerifyExistingText(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Verify"
+                ]
+              },
+              {
+                "cells": [
+                  "Test Case 1"
+                ]
+              },
+              {
+                "cells": [
+                  "00:00:00"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 98499303,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User click on",
+            "match": {
+              "location": "Steps.user_click_on(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Locator",
+                  "Type"
+                ]
+              },
+              {
+                "cells": [
+                  "Start",
+                  "accessibilityid"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2010291104,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User stays on this screen for 2 seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 30
+                }
+              ],
+              "location": "Steps.user_stays_on_this_screen_for_seconds(Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10089975741,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I NOT see the following",
+            "match": {
+              "location": "Steps.softAssertVerifyNotExistingText(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Verify"
+                ]
+              },
+              {
+                "cells": [
+                  "00:00:00"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 123575929,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User click on",
+            "match": {
+              "location": "Steps.user_click_on(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Locator",
+                  "Type"
+                ]
+              },
+              {
+                "cells": [
+                  "Pause",
+                  "accessibilityid"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 701749708,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User click on",
+            "match": {
+              "location": "Steps.user_click_on(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Locator",
+                  "Type"
+                ]
+              },
+              {
+                "cells": [
+                  "Start",
+                  "accessibilityid"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1011507566,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User click on",
+            "match": {
+              "location": "Steps.user_click_on(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Locator",
+                  "Type"
+                ]
+              },
+              {
+                "cells": [
+                  "Cancel",
+                  "accessibilityid"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1054753844,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I see the following",
+            "match": {
+              "location": "Steps.softAssertVerifyExistingText(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Verify"
+                ]
+              },
+              {
+                "cells": [
+                  "Test Case 1"
+                ]
+              },
+              {
+                "cells": [
+                  "00:00:00"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27075,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "verify all",
+            "match": {
+              "location": "Steps.verify_all()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "StopWatch screen",
+    "description": "",
+    "id": "stopwatch-screen",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/StopWatch.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2025-04-12T16:16:49.282Z",
+        "before": [
+          {
+            "result": {
+              "duration": 107003,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.before(Scenario)"
+            }
+          }
+        ],
+        "line": 59,
+        "name": "TC3 - Verify that the user is able to add - update - delete Variables",
+        "description": "",
+        "id": "variable-page;tc3---verify-that-the-user-is-able-to-add---update---delete-variables;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 10220778313,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2852170916,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open application and skip to dashboard",
+            "match": {
+              "location": "Steps.openApplicationAndSkipToDashboard()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 759556921,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User taps on \"Variables\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Variables\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1156246117,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User click on",
+            "match": {
+              "location": "Steps.user_click_on(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Locator",
+                  "Type"
+                ]
+              },
+              {
+                "cells": [
+                  "Add Category",
+                  "accessibilityid"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 755599759,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enters the text \"New One\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"New One\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.userEnterTheText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 597647099,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User taps on \"Boolean\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Boolean\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1485337324,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User taps on \"Decimal\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Decimal\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70602653,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User taps on \"OK\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 709943071,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I see the following",
+            "match": {
+              "location": "Steps.softAssertVerifyExistingText(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Verify"
+                ]
+              },
+              {
+                "cells": [
+                  "New One"
+                ]
+              },
+              {
+                "cells": [
+                  "0.0"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 91227908,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User taps on \"New One\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"New One\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1067887275,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I see the following",
+            "match": {
+              "location": "Steps.softAssertVerifyExistingText(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Verify"
+                ]
+              },
+              {
+                "cells": [
+                  "New One"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2171357134,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User enters \"Test Case 2\" into field \"enter_variable_dialog_value\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test Case 2\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"enter_variable_dialog_value\"",
+                  "offset": 37
+                }
+              ],
+              "location": "Steps.user_enters_into_field(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 799411690,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User taps on \"OK\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 658747759,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I see the following",
+            "match": {
+              "location": "Steps.softAssertVerifyExistingText(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Verify"
+                ]
+              },
+              {
+                "cells": [
+                  "Test Case 2"
+                ]
+              },
+              {
+                "cells": [
+                  "0.0"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 95588219,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User taps on \"0.0\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0.0\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2447820360,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User enters \"-8.5\" into field \"enter_variable_dialog_value\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"-8.5\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"enter_variable_dialog_value\"",
+                  "offset": 30
+                }
+              ],
+              "location": "Steps.user_enters_into_field(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 729223274,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User taps on \"OK\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 681655565,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I see the following",
+            "match": {
+              "location": "Steps.softAssertVerifyExistingText(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Verify"
+                ]
+              },
+              {
+                "cells": [
+                  "Test Case 2"
+                ]
+              },
+              {
+                "cells": [
+                  "-8.5"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 79261731,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User click on",
+            "match": {
+              "location": "Steps.user_click_on(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Locator",
+                  "Type"
+                ]
+              },
+              {
+                "cells": [
+                  "Delete",
+                  "accessibilityid"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 314279313,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I see the following",
+            "match": {
+              "location": "Steps.softAssertVerifyExistingText(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Verify"
+                ]
+              },
+              {
+                "cells": [
+                  "Are you sure you wish to delete this variable?"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 333993478,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "User taps on \"OK\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.userTapsOnText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20110171935,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I NOT see the following",
+            "match": {
+              "location": "Steps.softAssertVerifyNotExistingText(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Verify"
+                ]
+              },
+              {
+                "cells": [
+                  "Test Case 2"
+                ]
+              },
+              {
+                "cells": [
+                  "New One"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 83349,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "verify all",
+            "match": {
+              "location": "Steps.verify_all()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Variable page",
+    "description": "",
+    "id": "variable-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Variable.feature",
+    "tags": []
+  }
+]

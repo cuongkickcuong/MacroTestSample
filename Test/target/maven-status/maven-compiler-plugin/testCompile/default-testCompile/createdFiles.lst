@@ -1,0 +1,8 @@
+runners/RunFeatures.class
+assertion/MySoftAssert.class
+steps/Hooks.class
+base/AppiumThread.class
+steps/Steps.class
+base/BasePage.class
+base/BaseTest.class
+base/DriverSelector.class

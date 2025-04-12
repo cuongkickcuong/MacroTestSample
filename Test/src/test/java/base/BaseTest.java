@@ -3,7 +3,6 @@ package base;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.remote.MobileCapabilityType;
 import org.apache.commons.lang.NotImplementedException;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.*;

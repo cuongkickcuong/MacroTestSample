@@ -3,10 +3,6 @@ package base;
 import assertion.MySoftAssert;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.nativekey.AndroidKey;
-import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
@@ -15,22 +11,20 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
-import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class BasePage {
     protected AppiumDriver driver;
     protected WebDriverWait wait;
 
-    public static int EXPLICIT_TIME = 30;
-
-    protected By title;
+    public static int EXPLICIT_TIME = 10;
 
     SoftAssert softassert = new MySoftAssert();
 
     public BasePage() {
         this.driver = BaseTest.getDriver();
         wait = new WebDriverWait(driver, EXPLICIT_TIME);
-
+        driver.manage().timeouts().implicitlyWait(EXPLICIT_TIME, TimeUnit.SECONDS);
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
@@ -55,20 +49,6 @@ public class BasePage {
                 .until(ExpectedConditions.presenceOfElementLocated(by)).click();
     }
 
-    public WebElement waitPresence(By by, long timeOutInSeconds) {
-        System.out.println("Start Finding Element : " + by.toString());
-        WebElement element = null;
-        try {
-            element = new WebDriverWait(driver, timeOutInSeconds).ignoring(StaleElementReferenceException.class)
-                    .until(ExpectedConditions
-                            .presenceOfElementLocated(by));
-        } catch (TimeoutException e) {
-            System.out.println(e.getMessage());
-            element = null;
-        }
-        return element;
-    }
-
     public void waitPresenceByXpathAndClick(String text) {
         String xpath = String.format("//*[contains(@text,'%s')]", text);
         By by = MobileBy.xpath(xpath);
@@ -78,13 +58,13 @@ public class BasePage {
     public void verfiyElementExitByXpath(String text){
         String xpath = String.format("//*[contains(@text,'%s')]", text);
         By by = MobileBy.xpath(xpath);
-        softassert.assertTrue(driver.findElements(by).size() > 0);
+        softassert.assertTrue(driver.findElements(by).size() > 0, String.format("%s is not found", text));
     }
 
     public void verfiyElementNotExitByXpath(String text){
         String xpath = String.format("//*[contains(@text,'%s')]", text);
         By by = MobileBy.xpath(xpath);
-        softassert.assertFalse(driver.findElements(by).size() > 0);
+        softassert.assertFalse(driver.findElements(by).size() > 0, String.format("%s is found", text));
     }
 
     public void sendKeysWithAction(String text){

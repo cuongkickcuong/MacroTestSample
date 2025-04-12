@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite" thread-count="1" parallel="tests">
+    <parameter name="hubURL"
+        value="http://localhost:4723/wd/hub" />
+    <test name="Aurora Real Device SamSung Galaxy S21">
+        <parameter name="deviceName" value="SM_G991B" />
+        <parameter name="udid" value="RF8TC0CDQMA" />
+        <parameter name="platformName" value="Android" />
+        <parameter name="platformVersion" value="13" />
+        <parameter name="automationName" value="uiautomator2" />
+        <parameter name="appPath" value="/Users/cuong.h.tran/Downloads/Final_Exam_MacroDroid.apk" />
+        <parameter name="appPackage" value="com.arlosoft.macrodroid" />
+        <parameter name="appActivity" value="com.arlosoft.macrodroid.intro.IntroActivity" />
+        <classes>
+            <class name="runners.RunFeatures" />
+        </classes>
+    </test>
+</suite>
