@@ -13,6 +13,7 @@ Make sure the following are installed and configured on your machine:
 
 
 🛠 How to Set Up & Run the Tests
+
 📁 1. Edit Device Configuration File
 src/test/resources/GlobalGalaxyS21_5G_Demo.xml
 Update the following parameters with your device info:
@@ -22,7 +23,7 @@ Update the following parameters with your device info:
 <parameter name="platformName" value="Android"/> <!-- or iOS -->
 <parameter name="platformVersion" value="13"/>
 <parameter name="appPath" value="/absolute/path/to/app.apk"/>
-URL
+
 🧪 2. Start Appium Server
 Open Appium Desktop
 Click Start Server
