@@ -1,18 +1,43 @@
-***
-### Prerequisites
-1. Java
-2. Maven
-3. Appium
-4. Selenium Standalone Server or Appium Service  
-5. Cucumber for java + Gherkin syntax
+✅ 📦 Prerequisites
+Make sure the following are installed and configured on your machine:
+
+* Java JDK 11
+
+* Maven
+
+* Appium
+
+* Node.js
+
+* Android Studio / Xcode (depending on your target platform)
 
 
-***
-## How to execute
+🛠 How to Set Up & Run the Tests
+📁 1. Edit Device Configuration File
+src/test/resources/GlobalGalaxyS21_5G_Demo.xml
+Update the following parameters with your device info:
 
-1. Go to src/Test/resources/GlobalGalaxyS21_5G_Demo.xml
-Input your device name, udid, platform ( android /iOS ), platform version, app_path
-URL: If you're using Appium Server use Port 4723, if you're using Grid Hub infrastructure, change to port 4444
-2. Go to Test folder, use command to run : mvn clean test -Dtestng='GlobalGalaxyS21_5G_Demo.xml'
-3. Report will be located on src/test/target/cucumber-html-reports/overview-feature.html
+<parameter name="deviceName" value="Galaxy S21 5G"/>
+<parameter name="udid" value="emulator-5554"/>
+<parameter name="platformName" value="Android"/> <!-- or iOS -->
+<parameter name="platformVersion" value="13"/>
+<parameter name="appPath" value="/absolute/path/to/app.apk"/>
+URL
+🧪 2. Start Appium Server
+Open Appium Desktop
+Click Start Server
+Confirm it runs on http://localhost:4723
+Use port 4723 for local, or 4444 if running with Selenium Grid Hub
 
+▶️ 3. Run the Test with Maven and TestNG
+Navigate to your project root folder and run:
+mvn clean test -Dtestng=src/test/resources/GlobalGalaxyS21_5G_Demo.xml
+This will execute the test(s) defined in the XML file, using the specified parameters.
+
+📊 4. View the Cucumber HTML Report
+After the test completes, open the report at:
+target/cucumber-html-reports/overview-feature.html
+You can open this in any browser to view:
+Feature-level results
+Scenario steps
+Pass/fail status
